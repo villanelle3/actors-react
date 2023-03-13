@@ -1,15 +1,14 @@
 import { Button } from "@material-tailwind/react";
 import Card from 'react-bootstrap/Card';
 
-function Cards() {
+function Cards(props) {
     return (
-        <Card style={{ width: '18rem' }} className="mx-auto mt-4">
-            <Card.Img variant="top" src="https://blog.cobasi.com.br/wp-content/uploads/2021/08/AdobeStock_337625771.png" />
+        <Card style={{ width: '18rem' }} className="mx-auto mt-5">
+            <Card.Img variant="top" src={props.picture} />
             <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>{props.name}</Card.Title>
                 <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                    {props.desc}
                 </Card.Text>
                 <Button size="sm" className='btnCard bg-lime-900 rounded-lg'>Update</Button>
             </Card.Body>
