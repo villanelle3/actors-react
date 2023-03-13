@@ -1,5 +1,5 @@
-import { Button } from "@material-tailwind/react";
 import Card from 'react-bootstrap/Card';
+import Modal1 from '../Modals';
 
 function Cards(props) {
     return (
@@ -10,7 +10,7 @@ function Cards(props) {
                 <Card.Text>
                     {props.desc}
                 </Card.Text>
-                <Button size="sm" className='btnCard bg-lime-900 rounded-lg'>Update</Button>
+                <Modal1 name={props.name} desc={props.desc}/>
             </Card.Body>
         </Card>
     );

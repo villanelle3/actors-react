@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import { useState, useEffect } from "react";
 
-
 function Main(){
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -46,7 +45,8 @@ function Main(){
                     ))
                 }
             </Row>
-    </Container>
+            <br/><br/><br/>
+        </Container>
     )
 }
 
