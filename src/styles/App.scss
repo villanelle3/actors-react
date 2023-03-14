@@ -1,13 +1,25 @@
 @import './index.scss';
+$mobile: 767px;
 
-.btnCard{
-    transition: 0.5s;
-    display: block;
-    margin: 0 auto;
-    margin-top: 16px;
-    width: 80%;
-    font-weight: bold;
-    &:hover{
-        background-color: rgb(77 124 15);
+.card-main{
+    @media screen and (max-width: $mobile) {
+        width: 90%;
+    }
+    .card-image{
+        cursor: pointer;
+    }
+    .btnCard{
+        transition: 0.5s;
+        display: block;
+        margin: 0 auto;
+        margin-top: 16px;
+        width: 80%;
+        font-weight: bold;
+        &:hover{
+            background-color: rgb(77 124 15);
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            font-size: 14px;
+        }
     }
 }

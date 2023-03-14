@@ -41,7 +41,7 @@ function Main(){
             <Row>
                 {data &&
                     data.map(({ id, name, picture, h, age }) => (
-                        <div className="col-sm-3" key={id}><Cards  name={name} picture={picture} desc={`Height = ${h} Age = ${age}.`} /></div>
+                        <div className="col-sm-3" key={id}><Cards  id={id} name={name} picture={picture} desc={`Height = ${h} Age = ${age}.`} /></div>
                     ))
                 }
             </Row>
